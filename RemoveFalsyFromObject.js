@@ -9,9 +9,7 @@ let obj={a: 0, b: null, c: 'hello' }
 
 function removeFalsyFromObjects(obj){
     let result={}
-    let keys=Object.keys(obj)
-
-    for(let key of keys){
+    for(let key in obj){
         if(obj[key]){
             result[key]=obj[key]
         }

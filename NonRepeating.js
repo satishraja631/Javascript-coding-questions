@@ -8,7 +8,7 @@ function NonRepeatingElements(nums){
         map[num]=(map[num] | 0)+1;
     }
 
-    for(let key of Object.keys(map)){
+    for(let key in map){
         if(map[key]===1){
             return key
         }

@@ -3,10 +3,11 @@
 
 let nums=[4,1,7,2];
 
-const max=Math.max(...nums)
-const min=Math.min(...nums)
+// const max=Math.max(...nums)
+// const min=Math.min(...nums)
 
-console.log(max,min)
+const [max,min]=[Math.max(...nums),Math.min(...nums)]
+console.log([max,min],'max min')
 
 function minMax(nums){
   let max=nums[0];

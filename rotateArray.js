@@ -9,12 +9,12 @@
 
 
 let nums=[1, 2, 3, 4, 5], k = 2
-function slice(nums,k){
+function Slice(nums,k){
     let n=nums.length;
     return nums.slice(-k).concat(nums.slice(0,n-k))
 }
 
-console.log(slice(nums,k))
+console.log(Slice(nums,k))
 
 
 //using iterative approach . TC: O(n)

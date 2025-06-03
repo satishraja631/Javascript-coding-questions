@@ -3,6 +3,9 @@
 let nums1=[1,3,5]
 let nums2=[2,4,6]
 
+const mergedArray=[...nums1,...nums2].sort((a,b)=>a-b)
+
+console.log(mergedArray,'single line solution')
 //using sort
 function mergeArrays(nums1,nums2){
     let result=[...nums1,...nums2];
