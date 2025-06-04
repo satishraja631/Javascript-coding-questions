@@ -28,3 +28,19 @@ function flattenArray(arr){
 }
 
 console.log(flattenArray(deepNested),'without using flat function')
+
+function flatsArray(arr){
+    const result=arr.reduce((acc,elem)=>{
+        if(Array.isArray(elem)){
+            acc=acc.concat(flatsArray(elem))
+        }else{
+            acc.push(elem)
+        }
+
+        return acc
+    },[])
+
+    return result
+}
+
+console.log(flatsArray(deepNested),"using reduce");

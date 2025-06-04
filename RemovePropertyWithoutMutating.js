@@ -7,7 +7,7 @@
 let obj={ a: 1, b: 2 ,c:3,d:5}, key='d'
 function removeProp(obj,prop){
     let result={}
-    for(let key of Object.keys(obj)){
+    for(let key in obj){
         if(key!==prop){
            result[key]=obj[key]
         }

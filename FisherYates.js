@@ -16,4 +16,9 @@ function fisherYates(arr){
     return arr;
 }
 
+
+
 console.log(fisherYates(input))
+
+const sortedInput=input.sort(()=>Math.random()-0.5)
+console.log(sortedInput,'using sort')
